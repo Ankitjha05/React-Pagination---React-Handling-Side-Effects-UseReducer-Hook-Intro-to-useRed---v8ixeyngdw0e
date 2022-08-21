@@ -21,7 +21,7 @@ const PostList = ({ limit }) => {
   }, []);
   return (
     <>
-      {loader && <h4>loading...</h4>}
+      {loader && <h4 id="loader">loading...</h4>}
       {!loader && (
         <PaginationButtonsList
           lists={response}
